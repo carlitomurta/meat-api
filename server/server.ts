@@ -1,3 +1,4 @@
+import { handleError } from './error.handler';
 import { mergePatchBodyParser } from './merge-patch.parser';
 import { enviroment } from './../common/enviroment';
 import * as restify from 'restify';
@@ -31,6 +32,8 @@ export class Server {
         this.application.listen(enviroment.server.port, () => {
           resolve(this.application);
         });
+
+        this.application.on('restifyError', handleError);
       } catch (err) {
         reject(err);
       }
