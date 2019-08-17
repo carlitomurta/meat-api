@@ -11,11 +11,34 @@
     extsprintf "^1.4.0"
     lodash "^4.17.15"
 
+"@types/bson@*":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@types/bson/-/bson-4.0.0.tgz#9073772679d749116eb1dfca56f8eaac6d59cc7a"
+  integrity sha512-pq/rqJwJWkbS10crsG5bgnrisL8pML79KlMKQMoQwLUjlPAkrUHMvHJ3oGwE7WHR61Lv/nadMwXVAD2b+fpD8Q==
+  dependencies:
+    "@types/node" "*"
+
 "@types/bunyan@*":
   version "1.8.6"
   resolved "https://registry.yarnpkg.com/@types/bunyan/-/bunyan-1.8.6.tgz#6527641cca30bedec5feb9ab527b7803b8000582"
   integrity sha512-YiozPOOsS6bIuz31ilYqR5SlLif4TBWsousN2aCWLi5233nZSX19tFbcQUPdR7xJ8ypPyxkCGNxg0CIV5n9qxQ==
   dependencies:
+    "@types/node" "*"
+
+"@types/mongodb@*":
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/@types/mongodb/-/mongodb-3.2.3.tgz#c26bbabc7930f8b352c311ce6f214882c815a472"
+  integrity sha512-46ai7KWL5/Ls/x+gzU908hhpkXzB2SlrAh/07wHkMkGUdpRwYjbjxb8/Yq2WEZ33Sn5s/o9BCO+OkBTCS6Cfmw==
+  dependencies:
+    "@types/bson" "*"
+    "@types/node" "*"
+
+"@types/mongoose@^5.5.12":
+  version "5.5.12"
+  resolved "https://registry.yarnpkg.com/@types/mongoose/-/mongoose-5.5.12.tgz#030eb1401e5a449ff95f7b208ee201b44a0c9479"
+  integrity sha512-41TDORylr6M9Kytli/Qry28cQjD919+w+jHNR9rca95xH1/joNLUkLg9okKJ1I4mIR6Af28ESjBssed7RKElVA==
+  dependencies:
+    "@types/mongodb" "*"
     "@types/node" "*"
 
 "@types/node@*":
