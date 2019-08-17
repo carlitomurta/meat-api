@@ -1,0 +1,19 @@
+{
+  "name": "meat-api",
+  "version": "1.0.0",
+  "description": "API de restaurantes",
+  "main": "index.js",
+  "scripts": {
+    "serv": "nodemon dist/main.js",
+    "compile": "tsc -w"
+  },
+  "author": "Carlito Murta",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.6.9",
+    "restify": "^8.4.0"
+  },
+  "devDependencies": {
+    "@types/restify": "^7.2.12"
+  }
+}
